@@ -13,7 +13,7 @@ public class Kalkulator {
             return 1L;
         } else {
             long faktorijel=1L;
-            for(int i=1; i<num; ++i) {
+            for(int i=1; i<=num; ++i) {
                 faktorijel*=i;
             }
             return faktorijel;
