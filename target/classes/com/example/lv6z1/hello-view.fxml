@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="395.0" prefWidth="274.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lv6z1.HelloController">
+    <children>
+        <HBox prefHeight="87.0" prefWidth="262.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label fx:id="display" maxWidth="1.7976931348623157E308" prefHeight="58.0" prefWidth="250.0" style="-fx-background-color: #90EE90;" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox maxWidth="1.7976931348623157E308" prefHeight="68.0" prefWidth="274.0" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="198.0" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets left="5.0" right="6.0" />
+                    </HBox.margin>
+                    <children>
+                        <Button fx:id="modBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonModClick" prefHeight="40.0" prefWidth="52.0" text="\%" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Arial" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="6.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="divBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonDivClick" prefHeight="37.0" prefWidth="52.0" text="/" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Arial" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="6.0" right="6.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="mulBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonMulClick" prefHeight="40.0" prefWidth="52.0" text="x" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Arial" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="6.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <Button fx:id="minusBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonMinusClick" prefHeight="39.0" prefWidth="58.0" text="-" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="6.0" right="5.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox prefHeight="131.0" prefWidth="260.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox maxWidth="1.7976931348623157E308" prefHeight="131.0" prefWidth="207.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox prefHeight="70.0" prefWidth="427.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="btn7" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton7Click" prefHeight="34.0" prefWidth="52.0" text="7" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="btn8" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton8Click" prefHeight="34.0" prefWidth="52.0" text="8" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="6.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="btn9" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton9Click" prefHeight="36.0" prefWidth="52.0" text="9" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="6.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="70.0" prefWidth="427.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="btn4" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton4Click" prefHeight="33.0" prefWidth="52.0" text="4" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="btn5" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton5Click" prefHeight="35.0" prefWidth="52.0" text="5" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="6.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="btn6" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton6Click" prefHeight="35.0" prefWidth="52.0" text="6" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="6.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Button fx:id="plusBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonPlusClick" prefHeight="101.0" prefWidth="54.0" text="+" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="6.0" right="5.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox prefHeight="103.0" prefWidth="260.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox maxWidth="1.7976931348623157E308" prefHeight="103.0" prefWidth="207.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox prefHeight="74.0" prefWidth="195.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="btn1" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton1Click" prefHeight="37.0" prefWidth="52.0" text="1" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="btn2" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton2Click" prefHeight="37.0" prefWidth="52.0" text="2" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="6.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="btn3" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton3Click" prefHeight="36.0" prefWidth="52.0" text="3" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="6.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="202.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="btn0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButton0Click" prefHeight="34.0" prefWidth="117.0" text="0" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" right="6.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="dotBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonPtClick" prefHeight="34.0" prefWidth="53.0" text="." HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="6.0" right="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Button fx:id="equalsBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onButtonEqClick" prefHeight="98.0" prefWidth="54.0" style="-fx-background-color: #ed7e83;" text="=" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="6.0" right="5.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>
