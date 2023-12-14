@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="328.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="600.0" VBox.vgrow="NEVER">
+            <children>
+                <ListView fx:id="listaKorisnika" prefHeight="218.0" prefWidth="266.0">
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" top="50.0" />
+                    </HBox.margin>
+                </ListView>
+                <VBox prefHeight="316.0" prefWidth="130.0">
+                    <children>
+                        <Label text="Ime: " textFill="#484646">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="20.0" top="50.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="Prezime:" textFill="#484646">
+                            <VBox.margin>
+                                <Insets left="20.0" top="30.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label text="E-mail:" textFill="#484646">
+                            <VBox.margin>
+                                <Insets left="20.0" top="30.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label text="Korisničko ime:" textFill="#484646">
+                            <VBox.margin>
+                                <Insets left="20.0" top="30.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label text="Lozinka:" textFill="#484646">
+                            <VBox.margin>
+                                <Insets left="20.0" top="30.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="376.0" prefWidth="160.0">
+                    <children>
+                        <TextField fx:id="imeField">
+                            <VBox.margin>
+                                <Insets top="45.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="prezimeField">
+                            <VBox.margin>
+                                <Insets top="25.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="emailField">
+                            <VBox.margin>
+                                <Insets top="25.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="korImeField">
+                            <VBox.margin>
+                                <Insets top="25.0" />
+                            </VBox.margin>
+                        </TextField>
+                  <PasswordField fx:id="lozinkaField">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <ButtonBar prefHeight="68.0" prefWidth="600.0" VBox.vgrow="NEVER">
+            <buttons>
+                <Button fx:id="dodajButton" mnemonicParsing="false" onAction="#onDodajButtonClick" text="Dodaj" />
+                <Button fx:id="krajButton" mnemonicParsing="false" onAction="#onKrajButtonClick" text="Kraj" />
+            </buttons>
+            <VBox.margin>
+                <Insets bottom="50.0" right="20.0" />
+            </VBox.margin>
+        </ButtonBar>
+    </children>
+</VBox>
