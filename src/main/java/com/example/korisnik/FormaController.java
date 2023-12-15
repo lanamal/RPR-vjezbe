@@ -5,14 +5,16 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class FormaController {
     public TextField imeField;
     public TextField prezimeField;
     public TextField emailField;
     public TextField korImeField;
-    public TextField lozinkaField;
+    public PasswordField lozinkaField;
     private KorisniciModel model;
     public ListView<Korisnik> listaKorisnika;
 
@@ -63,6 +65,8 @@ public class FormaController {
     }
     @FXML
     public void onKrajButtonClick(ActionEvent actionEvent) {
-        Platform.exit();
+        Stage stage=(Stage) listaKorisnika.getScene().getWindow();
+        stage.close();
     }
+
 }

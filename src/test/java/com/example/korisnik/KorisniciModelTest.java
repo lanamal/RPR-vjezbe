@@ -1,7 +1,4 @@
-package com.company.korisnik;
-import com.example.korisnik.KorisniciModel;
-import com.example.korisnik.Korisnik;
-import javafx.collections.FXCollections;
+package com.example.korisnik;
 import javafx.collections.ObservableList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
