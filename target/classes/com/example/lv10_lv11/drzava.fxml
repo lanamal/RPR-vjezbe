@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lv10_lv11.DrzavaController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <VBox prefHeight="93.0" prefWidth="89.0">
+                <Label text="Naziv:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                    </padding></Label>
+                <Label text="Glavni grad:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                    </padding></Label>
+            </VBox>
+            <VBox prefHeight="82.0" prefWidth="184.0">
+                <TextField fx:id="nazivTextField">
+                    <VBox.margin>
+                        <Insets bottom="5.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding></TextField>
+                <ChoiceBox minHeight="-Infinity" prefHeight="30.0" prefWidth="147.0" fx:id="glavniGradChoiceBox">
+                    <VBox.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding></ChoiceBox>
+            </VBox>
+        </HBox>
+        <ButtonBar prefHeight="0.0" prefWidth="265.0">
+            <buttons>
+                <Button minWidth="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" fx:id="okButton" styleClass="confirm-button" text="Ok" onAction="#handleOkButtonClick">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding></Button>
+                <Button mnemonicParsing="false" text="Cancel" styleClass="cancel-button" fx:id="cancelButton" onAction="#handleCancelButtonClick">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding></Button>
+            </buttons>
+            <VBox.margin>
+                <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </ButtonBar>
+    </children>
+</VBox>
