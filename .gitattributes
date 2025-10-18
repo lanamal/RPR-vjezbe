@@ -1,0 +1,10 @@
+# Set Java as the language for Java source files
+*.java linguist-language=Java
+
+# Ignore README, text, and config files in language statistics
+README.md linguist-vendored
+*.txt linguist-vendored
+*.md linguist-vendored
+*.json linguist-vendored
+*.yml linguist-vendored
+*.yaml linguist-vendored
